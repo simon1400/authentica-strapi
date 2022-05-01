@@ -1,0 +1,30 @@
+{
+  "collectionName": "components_content_chapters",
+  "info": {
+    "displayName": "chapter",
+    "icon": "ad",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "content": {
+      "type": "richtext"
+    },
+    "images": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "numbers": {
+      "type": "component",
+      "repeatable": true,
+      "component": "content.number"
+    }
+  }
+}

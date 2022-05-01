@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_content_address_infos",
+  "info": {
+    "displayName": "Address info",
+    "icon": "bed"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "content": {
+      "type": "richtext",
+      "required": true
+    }
+  }
+}

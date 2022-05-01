@@ -1,0 +1,20 @@
+{
+  "collectionName": "components_content_reference_navs",
+  "info": {
+    "displayName": "referenceNav",
+    "icon": "align-left"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "item": {
+      "type": "component",
+      "repeatable": true,
+      "component": "action.link",
+      "required": true
+    }
+  }
+}

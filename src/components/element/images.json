@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_element_images",
+  "info": {
+    "displayName": "images",
+    "icon": "address-card"
+  },
+  "options": {},
+  "attributes": {
+    "images": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": true,
+      "required": true
+    }
+  }
+}

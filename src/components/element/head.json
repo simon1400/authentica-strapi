@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_element_heads",
+  "info": {
+    "displayName": "head",
+    "icon": "archway"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

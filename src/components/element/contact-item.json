@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_element_contact_items",
+  "info": {
+    "displayName": "contact-item",
+    "icon": "atlas"
+  },
+  "options": {},
+  "attributes": {
+    "text": {
+      "type": "string",
+      "required": true
+    },
+    "link": {
+      "type": "string",
+      "required": true
+    },
+    "icon": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_element_numbers",
+  "info": {
+    "displayName": "numbers",
+    "icon": "apple-alt"
+  },
+  "options": {},
+  "attributes": {
+    "number": {
+      "type": "component",
+      "repeatable": true,
+      "component": "content.number"
+    }
+  }
+}

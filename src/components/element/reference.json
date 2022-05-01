@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_element_references",
+  "info": {
+    "displayName": "reference",
+    "icon": "ambulance"
+  },
+  "options": {},
+  "attributes": {
+    "references": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::reference.reference"
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_content_numbers",
+  "info": {
+    "displayName": "number",
+    "icon": "check-square"
+  },
+  "options": {},
+  "attributes": {
+    "description": {
+      "type": "string"
+    },
+    "number": {
+      "type": "biginteger"
+    }
+  }
+}
