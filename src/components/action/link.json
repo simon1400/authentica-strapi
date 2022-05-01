@@ -2,7 +2,8 @@
   "collectionName": "components_action_links",
   "info": {
     "displayName": "link",
-    "icon": "arrow-circle-right"
+    "icon": "arrow-circle-right",
+    "description": ""
   },
   "options": {},
   "attributes": {

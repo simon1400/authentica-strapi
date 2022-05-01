@@ -2,7 +2,8 @@
   "collectionName": "components_action_heads",
   "info": {
     "displayName": "Head",
-    "icon": "arrow-circle-down"
+    "icon": "arrow-circle-down",
+    "description": ""
   },
   "options": {},
   "attributes": {
@@ -10,9 +11,10 @@
       "type": "string",
       "required": true
     },
-    "url": {
-      "type": "string",
-      "required": true
+    "blogs": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::blog.blog"
     }
   }
 }

@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_content_footer_contents",
+  "info": {
+    "displayName": "footerContent",
+    "icon": "air-freshener"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "link": {
+      "type": "string",
+      "required": true
+    },
+    "subTitle": {
+      "type": "string"
+    }
+  }
+}
