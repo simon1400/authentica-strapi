@@ -1,0 +1,18 @@
+{
+  "kind": "singleType",
+  "collectionName": "reference_overviews",
+  "info": {
+    "singularName": "reference-overview",
+    "pluralName": "reference-overviews",
+    "displayName": "Reference overview"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    }
+  }
+}

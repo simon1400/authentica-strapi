@@ -11,10 +11,10 @@
       "type": "string",
       "required": true
     },
-    "blogs": {
+    "article": {
       "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::blog.blog"
+      "relation": "oneToOne",
+      "target": "api::tech-article.tech-article"
     }
   }
 }

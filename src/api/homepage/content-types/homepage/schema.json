@@ -140,7 +140,7 @@
       },
       "component": "content.partner"
     },
-    "footerLink": {
+    "footer": {
       "type": "component",
       "repeatable": false,
       "pluginOptions": {
@@ -148,7 +148,7 @@
           "localized": true
         }
       },
-      "component": "action.link",
+      "component": "content.footer-content",
       "required": true
     }
   }
