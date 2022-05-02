@@ -100,19 +100,6 @@
       "type": "richtext",
       "required": true
     },
-    "nav": {
-      "type": "component",
-      "repeatable": true,
-      "pluginOptions": {
-        "versions": {
-          "versioned": true
-        },
-        "i18n": {
-          "localized": true
-        }
-      },
-      "component": "content.reference-nav"
-    },
     "chapters": {
       "pluginOptions": {
         "versions": {
@@ -128,7 +115,8 @@
         "element.images",
         "element.numbers",
         "element.reference",
-        "element.text"
+        "element.text",
+        "element.button"
       ]
     },
     "references": {
@@ -148,7 +136,7 @@
       "type": "string",
       "required": true
     },
-    "footerLink": {
+    "footer": {
       "type": "component",
       "repeatable": false,
       "pluginOptions": {
@@ -156,8 +144,25 @@
           "localized": true
         }
       },
-      "component": "action.link",
-      "required": true
+      "component": "content.footer-content"
+    },
+    "categories": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::tech-article.tech-article",
+      "inversedBy": "categoryRefs"
+    },
+    "technologies": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::tech-article.tech-article",
+      "inversedBy": "technologyRefs"
+    },
+    "materials": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::tech-article.tech-article",
+      "inversedBy": "materialRefs"
     }
   }
 }

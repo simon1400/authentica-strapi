@@ -57,18 +57,6 @@
       "type": "string",
       "required": true
     },
-    "description": {
-      "pluginOptions": {
-        "versions": {
-          "versioned": true
-        },
-        "i18n": {
-          "localized": true
-        }
-      },
-      "type": "richtext",
-      "required": true
-    },
     "content": {
       "pluginOptions": {
         "versions": {
@@ -79,20 +67,6 @@
         }
       },
       "type": "richtext"
-    },
-    "reference": {
-      "displayName": "reference",
-      "type": "component",
-      "repeatable": false,
-      "pluginOptions": {
-        "versions": {
-          "versioned": true
-        },
-        "i18n": {
-          "localized": true
-        }
-      },
-      "component": "content.reference"
     },
     "image": {
       "type": "media",
@@ -110,22 +84,27 @@
         }
       }
     },
-    "footerLink": {
-      "type": "component",
-      "repeatable": false,
+    "chapters": {
       "pluginOptions": {
         "i18n": {
           "localized": true
         }
       },
-      "component": "action.link",
-      "required": true
+      "type": "dynamiczone",
+      "components": [
+        "element.head",
+        "element.text",
+        "element.button",
+        "element.reference",
+        "element.images",
+        "element.numbers"
+      ]
     },
-    "vacancy_categories": {
+    "category": {
       "type": "relation",
-      "relation": "manyToMany",
+      "relation": "manyToOne",
       "target": "api::vacancy-category.vacancy-category",
-      "inversedBy": "vacancies"
+      "inversedBy": "child"
     }
   }
 }

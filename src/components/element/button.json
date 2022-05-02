@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_element_buttons",
+  "info": {
+    "displayName": "button",
+    "icon": "arrow-alt-circle-right"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "link": {
+      "type": "string",
+      "required": true
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "barevna",
+        "pruhledna"
+      ],
+      "default": "pruhledna"
+    }
+  }
+}

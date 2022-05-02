@@ -33,11 +33,11 @@
       "type": "uid",
       "targetField": "title"
     },
-    "blogs": {
+    "childs": {
       "type": "relation",
-      "relation": "manyToMany",
+      "relation": "oneToMany",
       "target": "api::blog.blog",
-      "inversedBy": "blog_categories"
+      "mappedBy": "category"
     }
   }
 }

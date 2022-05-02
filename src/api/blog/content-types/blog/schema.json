@@ -84,7 +84,8 @@
         "element.images",
         "element.numbers",
         "element.reference",
-        "element.text"
+        "element.text",
+        "element.button"
       ]
     },
     "image": {
@@ -103,7 +104,7 @@
         }
       }
     },
-    "footerLink": {
+    "footer": {
       "type": "component",
       "repeatable": false,
       "pluginOptions": {
@@ -111,14 +112,21 @@
           "localized": true
         }
       },
-      "component": "action.link",
-      "required": true
+      "component": "content.footer-content"
     },
-    "blog_categories": {
+    "textPublication": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string"
+    },
+    "category": {
       "type": "relation",
-      "relation": "manyToMany",
+      "relation": "manyToOne",
       "target": "api::blog-category.blog-category",
-      "inversedBy": "blogs"
+      "inversedBy": "childs"
     }
   }
 }

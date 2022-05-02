@@ -66,7 +66,9 @@
         "element.head",
         "element.images",
         "element.reference",
-        "element.text"
+        "element.text",
+        "element.button",
+        "element.numbers"
       ],
       "required": true
     },
@@ -79,6 +81,36 @@
         }
       },
       "component": "content.footer-content"
+    },
+    "child": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::tech-article.tech-article",
+      "mappedBy": "parent"
+    },
+    "parent": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::tech-article.tech-article",
+      "inversedBy": "child"
+    },
+    "categoryRefs": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::reference.reference",
+      "inversedBy": "categories"
+    },
+    "technologyRefs": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::reference.reference",
+      "inversedBy": "technologies"
+    },
+    "materialRefs": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::reference.reference",
+      "inversedBy": "materials"
     }
   }
 }

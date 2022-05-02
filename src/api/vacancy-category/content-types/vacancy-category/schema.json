@@ -34,11 +34,11 @@
       "type": "uid",
       "targetField": "title"
     },
-    "vacancies": {
+    "child": {
       "type": "relation",
-      "relation": "manyToMany",
+      "relation": "oneToMany",
       "target": "api::vacancy.vacancy",
-      "inversedBy": "vacancy_categories"
+      "mappedBy": "category"
     }
   }
 }
