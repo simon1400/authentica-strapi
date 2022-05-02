@@ -148,21 +148,18 @@
     },
     "categories": {
       "type": "relation",
-      "relation": "manyToMany",
-      "target": "api::tech-article.tech-article",
-      "inversedBy": "categoryRefs"
+      "relation": "oneToMany",
+      "target": "api::tech-article.tech-article"
     },
     "technologies": {
       "type": "relation",
-      "relation": "manyToMany",
-      "target": "api::tech-article.tech-article",
-      "inversedBy": "technologyRefs"
+      "relation": "oneToMany",
+      "target": "api::tech-article.tech-article"
     },
     "materials": {
       "type": "relation",
-      "relation": "manyToMany",
-      "target": "api::tech-article.tech-article",
-      "inversedBy": "materialRefs"
+      "relation": "oneToMany",
+      "target": "api::tech-article.tech-article"
     }
   }
 }

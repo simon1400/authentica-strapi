@@ -93,24 +93,6 @@
       "relation": "manyToOne",
       "target": "api::tech-article.tech-article",
       "inversedBy": "child"
-    },
-    "categoryRefs": {
-      "type": "relation",
-      "relation": "manyToMany",
-      "target": "api::reference.reference",
-      "inversedBy": "categories"
-    },
-    "technologyRefs": {
-      "type": "relation",
-      "relation": "manyToMany",
-      "target": "api::reference.reference",
-      "inversedBy": "technologies"
-    },
-    "materialRefs": {
-      "type": "relation",
-      "relation": "manyToMany",
-      "target": "api::reference.reference",
-      "inversedBy": "materials"
     }
   }
 }
