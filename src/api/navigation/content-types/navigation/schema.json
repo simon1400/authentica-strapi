@@ -27,17 +27,6 @@
       "component": "navigation.nav-item",
       "required": true
     },
-    "social": {
-      "type": "component",
-      "repeatable": true,
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      },
-      "component": "navigation.nav-item",
-      "required": true
-    },
     "footer1": {
       "pluginOptions": {
         "i18n": {
@@ -61,6 +50,16 @@
         }
       },
       "type": "richtext"
+    },
+    "socNav": {
+      "type": "component",
+      "repeatable": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "navigation.social-nav"
     }
   }
 }

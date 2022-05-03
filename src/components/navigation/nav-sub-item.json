@@ -2,7 +2,8 @@
   "collectionName": "components_navigation_nav_sub_items",
   "info": {
     "displayName": "Nav sub item",
-    "icon": "arrow-circle-up"
+    "icon": "arrow-circle-up",
+    "description": ""
   },
   "options": {},
   "attributes": {
@@ -15,11 +16,27 @@
       "required": true
     },
     "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
+    },
+    "tech_articles": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::tech-article.tech-article"
+    },
+    "blogs": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::blog.blog"
+    },
+    "references": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::reference.reference"
     }
   }
 }
