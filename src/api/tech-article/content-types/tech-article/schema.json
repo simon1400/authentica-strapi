@@ -93,6 +93,16 @@
       "relation": "manyToOne",
       "target": "api::tech-article.tech-article",
       "inversedBy": "child"
+    },
+    "meta": {
+      "type": "component",
+      "repeatable": false,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "seo.meta"
     }
   }
 }

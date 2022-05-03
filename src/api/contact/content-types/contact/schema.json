@@ -96,7 +96,7 @@
       },
       "component": "content.address-info"
     },
-    "footerLink": {
+    "footer": {
       "type": "component",
       "repeatable": false,
       "pluginOptions": {
@@ -104,8 +104,18 @@
           "localized": true
         }
       },
-      "component": "action.link",
+      "component": "content.footer-content",
       "required": true
+    },
+    "meta": {
+      "type": "component",
+      "repeatable": false,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "seo.meta"
     }
   }
 }

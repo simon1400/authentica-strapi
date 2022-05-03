@@ -105,6 +105,16 @@
       "relation": "manyToOne",
       "target": "api::vacancy-category.vacancy-category",
       "inversedBy": "child"
+    },
+    "meta": {
+      "type": "component",
+      "repeatable": false,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "seo.meta"
     }
   }
 }
