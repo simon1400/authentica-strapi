@@ -1,0 +1,31 @@
+{
+  "collectionName": "components_navigation_nav_items",
+  "info": {
+    "displayName": "Nav item",
+    "icon": "align-right"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "url": {
+      "type": "string",
+      "required": true
+    },
+    "image": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "subNav": {
+      "displayName": "Nav sub item",
+      "type": "component",
+      "repeatable": true,
+      "component": "navigation.nav-sub-item"
+    }
+  }
+}
