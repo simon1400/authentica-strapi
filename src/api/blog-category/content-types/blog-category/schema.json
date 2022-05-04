@@ -4,7 +4,7 @@
   "info": {
     "singularName": "blog-category",
     "pluralName": "blog-categories",
-    "displayName": "Blog category",
+    "displayName": "Blog - kategorie",
     "description": ""
   },
   "options": {
@@ -48,7 +48,7 @@
       "type": "relation",
       "relation": "manyToMany",
       "target": "api::blog.blog",
-      "inversedBy": "categories"
+      "mappedBy": "categories"
     }
   }
 }

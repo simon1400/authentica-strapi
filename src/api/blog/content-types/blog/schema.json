@@ -4,7 +4,7 @@
   "info": {
     "singularName": "blog",
     "pluralName": "blogs",
-    "displayName": "Blog",
+    "displayName": "Blog - příspěvky",
     "description": ""
   },
   "options": {
@@ -80,12 +80,12 @@
       },
       "type": "dynamiczone",
       "components": [
+        "element.button",
         "element.head",
         "element.images",
         "element.numbers",
         "element.reference",
-        "element.text",
-        "element.button"
+        "element.text"
       ]
     },
     "image": {

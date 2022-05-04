@@ -4,7 +4,7 @@
   "info": {
     "singularName": "reference",
     "pluralName": "references",
-    "displayName": "reference",
+    "displayName": "Reference",
     "description": ""
   },
   "options": {
@@ -111,12 +111,12 @@
       },
       "type": "dynamiczone",
       "components": [
+        "element.button",
         "element.head",
         "element.images",
         "element.numbers",
         "element.reference",
-        "element.text",
-        "element.button"
+        "element.text"
       ]
     },
     "references": {

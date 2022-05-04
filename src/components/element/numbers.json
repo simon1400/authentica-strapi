@@ -1,8 +1,9 @@
 {
   "collectionName": "components_element_numbers",
   "info": {
-    "displayName": "numbers",
-    "icon": "apple-alt"
+    "displayName": "čísla",
+    "icon": "balance-scale-left",
+    "description": ""
   },
   "options": {},
   "attributes": {

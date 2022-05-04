@@ -1,8 +1,9 @@
 {
   "collectionName": "components_element_heads",
   "info": {
-    "displayName": "head",
-    "icon": "archway"
+    "displayName": "nadpis",
+    "icon": "dumbbell",
+    "description": ""
   },
   "options": {},
   "attributes": {

@@ -156,7 +156,7 @@
       "multiple": false,
       "required": true,
       "allowedTypes": [
-        "videos"
+        "images"
       ],
       "pluginOptions": {
         "i18n": {

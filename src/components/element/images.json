@@ -1,18 +1,19 @@
 {
   "collectionName": "components_element_images",
   "info": {
-    "displayName": "images",
-    "icon": "address-card"
+    "displayName": "obrázky",
+    "icon": "images",
+    "description": ""
   },
   "options": {},
   "attributes": {
     "images": {
-      "allowedTypes": [
-        "images"
-      ],
       "type": "media",
       "multiple": true,
-      "required": true
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
     }
   }
 }
