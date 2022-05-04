@@ -23,20 +23,36 @@
         "images"
       ]
     },
-    "tech_articles": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::tech-article.tech-article"
+    "subTitle1": {
+      "type": "string",
+      "required": false
     },
-    "blogs": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::blog.blog"
+    "subUrl1": {
+      "type": "string"
     },
-    "references": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::reference.reference"
+    "subTitle2": {
+      "type": "string"
+    },
+    "subUrl2": {
+      "type": "string"
+    },
+    "subTitle3": {
+      "type": "string"
+    },
+    "subUrl3": {
+      "type": "string"
+    },
+    "subTitle4": {
+      "type": "string"
+    },
+    "subUrl4": {
+      "type": "string"
+    },
+    "subTitle5": {
+      "type": "string"
+    },
+    "subUrl5": {
+      "type": "string"
     }
   }
 }
