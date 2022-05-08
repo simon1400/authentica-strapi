@@ -63,16 +63,16 @@
       },
       "type": "dynamiczone",
       "components": [
+        "element.button",
         "element.head",
         "element.images",
+        "element.numbers",
         "element.reference",
-        "element.text",
-        "element.button",
-        "element.numbers"
+        "element.text"
       ],
       "required": true
     },
-    "footerContent": {
+    "footer": {
       "type": "component",
       "repeatable": false,
       "pluginOptions": {
