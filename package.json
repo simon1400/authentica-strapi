@@ -21,7 +21,6 @@
     "strapi-plugin-local-image-sharp": "^1.0.2",
     "strapi-plugin-placeholder": "^4.1.7",
     "strapi-plugin-publisher": "^1.1.3",
-    "strapi-plugin-rest-cache": "^4.2.4",
     "strapi-plugin-sitemap": "^2.0.7",
     "strapi-provider-rest-cache-memory": "^4.2.4",
     "strapi-tiptap-editor": "^0.7.9"
