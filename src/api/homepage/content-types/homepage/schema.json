@@ -173,6 +173,17 @@
         }
       },
       "component": "seo.meta"
+    },
+    "topButton": {
+      "type": "component",
+      "repeatable": false,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "action.link",
+      "required": true
     }
   }
 }
