@@ -3302,17 +3302,17 @@ async-retry@^1.2.1:
   dependencies:
     retry "0.13.1"
 
-async@3.2.3, async@^3.1.0:
-  version "3.2.3"
-  resolved "https://registry.yarnpkg.com/async/-/async-3.2.3.tgz#ac53dafd3f4720ee9e8a160628f18ea91df196c9"
-  integrity sha512-spZRyzKL5l5BZQrr/6m/SqFdBN0q3OCI0f9rjfBzCMBIP4p75P620rR3gTmaksNOhmzgdxcaxdNfMy6anrbM0g==
-
 async@^2.6.2:
   version "2.6.4"
   resolved "https://registry.yarnpkg.com/async/-/async-2.6.4.tgz#706b7ff6084664cd7eae713f6f965433b5504221"
   integrity sha512-mzo5dfJYwAn29PeiJ0zvwTo04zj8HDJj0Mn8TD7sno7q12prdbnasKJHhkm2c1LgrhlJ0teaea8860oxi51mGA==
   dependencies:
     lodash "^4.17.14"
+
+async@^3.1.0:
+  version "3.2.3"
+  resolved "https://registry.yarnpkg.com/async/-/async-3.2.3.tgz#ac53dafd3f4720ee9e8a160628f18ea91df196c9"
+  integrity sha512-spZRyzKL5l5BZQrr/6m/SqFdBN0q3OCI0f9rjfBzCMBIP4p75P620rR3gTmaksNOhmzgdxcaxdNfMy6anrbM0g==
 
 asynckit@^0.4.0:
   version "0.4.0"
@@ -3827,15 +3827,6 @@ cache-content-type@^1.0.0:
   dependencies:
     mime-types "^2.1.18"
     ylru "^1.2.0"
-
-cache-manager@^3.6.0:
-  version "3.6.1"
-  resolved "https://registry.yarnpkg.com/cache-manager/-/cache-manager-3.6.1.tgz#44f93b7a42265cb653cdebcffc311b5bdfb62596"
-  integrity sha512-jxJvGYhN5dUgpriAdsDnnYbKse4dEXI5i3XpwTfPq5utPtXH1uYXWyGLHGlbSlh9Vq4ytrgAUVwY+IodNeKigA==
-  dependencies:
-    async "3.2.3"
-    lodash "^4.17.21"
-    lru-cache "6.0.0"
 
 cacheable-lookup@^5.0.3:
   version "5.0.4"
@@ -7783,7 +7774,7 @@ lowercase-keys@^2.0.0:
   resolved "https://registry.yarnpkg.com/lowercase-keys/-/lowercase-keys-2.0.0.tgz#2603e78b7b4b0006cbca2fbcc8a3202558ac9479"
   integrity sha512-tqNXrS78oMOE73NMxK4EMLQsQowWf8jKooH9g7xPavRT706R6bkQJ6DY2Te7QukaZsulxa30wQ7bk0pm4XiHmA==
 
-lru-cache@6.0.0, lru-cache@^6.0.0:
+lru-cache@^6.0.0:
   version "6.0.0"
   resolved "https://registry.yarnpkg.com/lru-cache/-/lru-cache-6.0.0.tgz#6d6fe6570ebd96aaf90fcad1dafa3b2566db3a94"
   integrity sha512-Jo6dJ04CmSjuznwJSS3pUeWmd/H0ffTlkXXgwZi+eq1UCmqQwCh+eLsYOYCwY991i2Fah4h1BEMCx4qThGbsiA==
@@ -10639,13 +10630,6 @@ strapi-plugin-sitemap@^2.0.7:
     redux-thunk "^2.3.0"
     sitemap "^7.1.0"
     xml2js "^0.4.23"
-
-strapi-provider-rest-cache-memory@^4.2.4:
-  version "4.2.4"
-  resolved "https://registry.yarnpkg.com/strapi-provider-rest-cache-memory/-/strapi-provider-rest-cache-memory-4.2.4.tgz#65496cf14c5e79b93a37f66708300197ed41d3d3"
-  integrity sha512-W8mkl5chvLMj4wfcle7U2CzwdEBN4TkJTQzRWkK7hQSLpACQ438yZsULkUFdxFjymN+FC9k34A5ET9tOce8Q1A==
-  dependencies:
-    cache-manager "^3.6.0"
 
 strapi-tiptap-editor@^0.7.9:
   version "0.7.9"
