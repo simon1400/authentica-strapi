@@ -2,7 +2,8 @@
   "collectionName": "components_navigation_social_navs",
   "info": {
     "displayName": "Social nav",
-    "icon": "arrow-alt-circle-up"
+    "icon": "arrow-alt-circle-up",
+    "description": ""
   },
   "options": {},
   "attributes": {
@@ -15,11 +16,21 @@
       "required": true
     },
     "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
+    },
+    "icon": {
+      "type": "enumeration",
+      "enum": [
+        "linkedin",
+        "facebook",
+        "instagram",
+        "twitter"
+      ]
     }
   }
 }
