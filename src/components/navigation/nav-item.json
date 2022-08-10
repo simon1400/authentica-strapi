@@ -14,12 +14,6 @@
     "url": {
       "type": "string",
       "required": true
-    },
-    "subNav": {
-      "displayName": "Nav sub item",
-      "type": "component",
-      "repeatable": true,
-      "component": "navigation.nav-sub-item"
     }
   }
 }
