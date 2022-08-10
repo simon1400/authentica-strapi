@@ -22,37 +22,6 @@
       "allowedTypes": [
         "images"
       ]
-    },
-    "subTitle1": {
-      "type": "string",
-      "required": false
-    },
-    "subUrl1": {
-      "type": "string"
-    },
-    "subTitle2": {
-      "type": "string"
-    },
-    "subUrl2": {
-      "type": "string"
-    },
-    "subTitle3": {
-      "type": "string"
-    },
-    "subUrl3": {
-      "type": "string"
-    },
-    "subTitle4": {
-      "type": "string"
-    },
-    "subUrl4": {
-      "type": "string"
-    },
-    "subTitle5": {
-      "type": "string"
-    },
-    "subUrl5": {
-      "type": "string"
     }
   }
 }

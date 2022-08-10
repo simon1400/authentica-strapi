@@ -60,6 +60,16 @@
         }
       },
       "component": "navigation.social-nav"
+    },
+    "headNav": {
+      "type": "component",
+      "repeatable": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "navigation.nav-sub-item"
     }
   }
 }
