@@ -4,7 +4,7 @@
   "version": "0.1.0",
   "description": "A Strapi application",
   "scripts": {
-    "develop": "strapi develop",
+    "dev": "strapi develop",
     "start": "strapi start",
     "build": "strapi build",
     "deploy": "pm2 deploy production",
@@ -19,7 +19,6 @@
     "@strapi/plugin-i18n": "4.1.11",
     "better-sqlite3": "7.4.6",
     "strapi-plugin-local-image-sharp": "^1.0.2",
-    "strapi-plugin-publisher": "^1.1.3",
     "strapi-plugin-sitemap": "^2.0.7",
     "strapi-tiptap-editor": "^0.7.9"
   },
