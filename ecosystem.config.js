@@ -1,8 +1,7 @@
 module.exports = {
   apps : [{
     name   : "Authentica strapi",
-    script : "yarn start",
-    interpreter : 'node@20.15.0'
+    script : "yarn start"
   }],
 
   deploy : {
