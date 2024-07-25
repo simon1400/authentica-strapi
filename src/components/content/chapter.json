@@ -10,9 +10,6 @@
     "title": {
       "type": "string"
     },
-    "content": {
-      "type": "richtext"
-    },
     "images": {
       "type": "media",
       "multiple": true,
@@ -25,6 +22,14 @@
       "type": "component",
       "repeatable": true,
       "component": "content.number"
+    },
+    "content": {
+      "type": "customField",
+      "options": {
+        "output": "HTML",
+        "preset": "light"
+      },
+      "customField": "plugin::ckeditor.CKEditor"
     }
   }
 }

@@ -43,17 +43,6 @@
       "type": "string",
       "required": true
     },
-    "content": {
-      "pluginOptions": {
-        "versions": {
-          "versioned": true
-        },
-        "i18n": {
-          "localized": true
-        }
-      },
-      "type": "richtext"
-    },
     "footer": {
       "type": "component",
       "repeatable": false,
@@ -74,6 +63,19 @@
         }
       },
       "component": "seo.meta"
+    },
+    "content": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "customField",
+      "options": {
+        "output": "HTML",
+        "preset": "light"
+      },
+      "customField": "plugin::ckeditor.CKEditor"
     }
   }
 }

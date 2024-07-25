@@ -8,8 +8,12 @@
   "options": {},
   "attributes": {
     "content": {
-      "type": "richtext",
-      "required": true
+      "type": "customField",
+      "options": {
+        "output": "HTML",
+        "preset": "light"
+      },
+      "customField": "plugin::ckeditor.CKEditor"
     }
   }
 }

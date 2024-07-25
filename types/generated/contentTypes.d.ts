@@ -954,15 +954,6 @@ export interface ApiBlogBlog extends Schema.CollectionType {
           localized: true;
         };
       }>;
-    image: Attribute.Media<'images' | 'videos'> &
-      Attribute.SetPluginOptions<{
-        versions: {
-          versioned: true;
-        };
-        i18n: {
-          localized: true;
-        };
-      }>;
     footer: Attribute.Component<'content.footer-content'> &
       Attribute.SetPluginOptions<{
         i18n: {
@@ -986,7 +977,20 @@ export interface ApiBlogBlog extends Schema.CollectionType {
           localized: true;
         };
       }>;
-    content: Attribute.Blocks &
+    image: Attribute.Media<'images'> &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    content: Attribute.RichText &
+      Attribute.CustomField<
+        'plugin::ckeditor.CKEditor',
+        {
+          output: 'HTML';
+          preset: 'light';
+        }
+      > &
       Attribute.SetPluginOptions<{
         i18n: {
           localized: true;
@@ -1119,15 +1123,6 @@ export interface ApiBlogOverviewBlogOverview extends Schema.SingleType {
           localized: true;
         };
       }>;
-    content: Attribute.RichText &
-      Attribute.SetPluginOptions<{
-        versions: {
-          versioned: true;
-        };
-        i18n: {
-          localized: true;
-        };
-      }>;
     footer: Attribute.Component<'content.footer-content'> &
       Attribute.Required &
       Attribute.SetPluginOptions<{
@@ -1136,6 +1131,19 @@ export interface ApiBlogOverviewBlogOverview extends Schema.SingleType {
         };
       }>;
     meta: Attribute.Component<'seo.meta'> &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    content: Attribute.RichText &
+      Attribute.CustomField<
+        'plugin::ckeditor.CKEditor',
+        {
+          output: 'HTML';
+          preset: 'light';
+        }
+      > &
       Attribute.SetPluginOptions<{
         i18n: {
           localized: true;
@@ -1208,15 +1216,6 @@ export interface ApiContactContact extends Schema.SingleType {
           localized: true;
         };
       }>;
-    content: Attribute.RichText &
-      Attribute.SetPluginOptions<{
-        versions: {
-          versioned: true;
-        };
-        i18n: {
-          localized: true;
-        };
-      }>;
     contactItem: Attribute.Component<'element.contact-item', true> &
       Attribute.SetPluginOptions<{
         versions: {
@@ -1253,6 +1252,19 @@ export interface ApiContactContact extends Schema.SingleType {
         };
       }>;
     meta: Attribute.Component<'seo.meta'> &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    content: Attribute.RichText &
+      Attribute.CustomField<
+        'plugin::ckeditor.CKEditor',
+        {
+          output: 'HTML';
+          preset: 'light';
+        }
+      > &
       Attribute.SetPluginOptions<{
         i18n: {
           localized: true;
@@ -1335,16 +1347,6 @@ export interface ApiHomepageHomepage extends Schema.SingleType {
           localized: true;
         };
       }>;
-    content: Attribute.RichText &
-      Attribute.Required &
-      Attribute.SetPluginOptions<{
-        versions: {
-          versioned: true;
-        };
-        i18n: {
-          localized: true;
-        };
-      }>;
     cta: Attribute.Component<'action.link'> &
       Attribute.SetPluginOptions<{
         versions: {
@@ -1359,15 +1361,6 @@ export interface ApiHomepageHomepage extends Schema.SingleType {
       'oneToMany',
       'api::reference.reference'
     >;
-    contentReference: Attribute.RichText &
-      Attribute.SetPluginOptions<{
-        versions: {
-          versioned: true;
-        };
-        i18n: {
-          localized: true;
-        };
-      }>;
     refCta: Attribute.Component<'action.link'> &
       Attribute.SetPluginOptions<{
         versions: {
@@ -1418,6 +1411,32 @@ export interface ApiHomepageHomepage extends Schema.SingleType {
       }>;
     topButton: Attribute.Component<'action.link'> &
       Attribute.Required &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    content: Attribute.RichText &
+      Attribute.CustomField<
+        'plugin::ckeditor.CKEditor',
+        {
+          output: 'HTML';
+          preset: 'light';
+        }
+      > &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    contentReference: Attribute.RichText &
+      Attribute.CustomField<
+        'plugin::ckeditor.CKEditor',
+        {
+          output: 'HTML';
+          preset: 'light';
+        }
+      > &
       Attribute.SetPluginOptions<{
         i18n: {
           localized: true;
@@ -1474,24 +1493,6 @@ export interface ApiNavigationNavigation extends Schema.SingleType {
           localized: true;
         };
       }>;
-    footer1: Attribute.RichText &
-      Attribute.SetPluginOptions<{
-        i18n: {
-          localized: true;
-        };
-      }>;
-    footer2: Attribute.RichText &
-      Attribute.SetPluginOptions<{
-        i18n: {
-          localized: true;
-        };
-      }>;
-    footer3: Attribute.RichText &
-      Attribute.SetPluginOptions<{
-        i18n: {
-          localized: true;
-        };
-      }>;
     socNav: Attribute.Component<'navigation.social-nav', true> &
       Attribute.SetPluginOptions<{
         i18n: {
@@ -1499,6 +1500,45 @@ export interface ApiNavigationNavigation extends Schema.SingleType {
         };
       }>;
     headNav: Attribute.Component<'navigation.nav-sub-item', true> &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    footer1: Attribute.RichText &
+      Attribute.CustomField<
+        'plugin::ckeditor.CKEditor',
+        {
+          output: 'HTML';
+          preset: 'light';
+        }
+      > &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    footer2: Attribute.RichText &
+      Attribute.CustomField<
+        'plugin::ckeditor.CKEditor',
+        {
+          output: 'HTML';
+          preset: 'light';
+        }
+      > &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    footer3: Attribute.RichText &
+      Attribute.CustomField<
+        'plugin::ckeditor.CKEditor',
+        {
+          output: 'HTML';
+          preset: 'light';
+        }
+      > &
       Attribute.SetPluginOptions<{
         i18n: {
           localized: true;
@@ -1601,16 +1641,6 @@ export interface ApiReferenceReference extends Schema.CollectionType {
           localized: true;
         };
       }>;
-    content: Attribute.RichText &
-      Attribute.Required &
-      Attribute.SetPluginOptions<{
-        versions: {
-          versioned: true;
-        };
-        i18n: {
-          localized: true;
-        };
-      }>;
     chapters: Attribute.DynamicZone<
       [
         'element.button',
@@ -1665,13 +1695,33 @@ export interface ApiReferenceReference extends Schema.CollectionType {
       'oneToMany',
       'api::tech-article.tech-article'
     >;
-    description: Attribute.RichText &
+    meta: Attribute.Component<'seo.meta'> &
       Attribute.SetPluginOptions<{
         i18n: {
           localized: true;
         };
       }>;
-    meta: Attribute.Component<'seo.meta'> &
+    content: Attribute.RichText &
+      Attribute.CustomField<
+        'plugin::ckeditor.CKEditor',
+        {
+          output: 'HTML';
+          preset: 'light';
+        }
+      > &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    description: Attribute.RichText &
+      Attribute.CustomField<
+        'plugin::ckeditor.CKEditor',
+        {
+          output: 'HTML';
+          preset: 'light';
+        }
+      > &
       Attribute.SetPluginOptions<{
         i18n: {
           localized: true;
@@ -1743,13 +1793,6 @@ export interface ApiTechArticleTechArticle extends Schema.CollectionType {
           localized: true;
         };
       }>;
-    content: Attribute.RichText &
-      Attribute.Required &
-      Attribute.SetPluginOptions<{
-        i18n: {
-          localized: true;
-        };
-      }>;
     chapters: Attribute.DynamicZone<
       [
         'element.button',
@@ -1783,6 +1826,19 @@ export interface ApiTechArticleTechArticle extends Schema.CollectionType {
       'api::tech-article.tech-article'
     >;
     meta: Attribute.Component<'seo.meta'> &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    content: Attribute.RichText &
+      Attribute.CustomField<
+        'plugin::ckeditor.CKEditor',
+        {
+          output: 'HTML';
+          preset: 'light';
+        }
+      > &
       Attribute.SetPluginOptions<{
         i18n: {
           localized: true;
@@ -1866,15 +1922,6 @@ export interface ApiVacancyVacancy extends Schema.CollectionType {
           localized: true;
         };
       }>;
-    content: Attribute.RichText &
-      Attribute.SetPluginOptions<{
-        versions: {
-          versioned: true;
-        };
-        i18n: {
-          localized: true;
-        };
-      }>;
     image: Attribute.Media<'images' | 'videos'> &
       Attribute.Required &
       Attribute.SetPluginOptions<{
@@ -1913,6 +1960,19 @@ export interface ApiVacancyVacancy extends Schema.CollectionType {
       }>;
     footer: Attribute.Component<'content.footer-content'> &
       Attribute.Required &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    content: Attribute.RichText &
+      Attribute.CustomField<
+        'plugin::ckeditor.CKEditor',
+        {
+          output: 'HTML';
+          preset: 'light';
+        }
+      > &
       Attribute.SetPluginOptions<{
         i18n: {
           localized: true;
@@ -2055,15 +2115,6 @@ export interface ApiVacancyOverviewVacancyOverview extends Schema.SingleType {
           localized: true;
         };
       }>;
-    content: Attribute.RichText &
-      Attribute.SetPluginOptions<{
-        versions: {
-          versioned: true;
-        };
-        i18n: {
-          localized: true;
-        };
-      }>;
     footer: Attribute.Component<'content.footer-content'> &
       Attribute.Required &
       Attribute.SetPluginOptions<{
@@ -2072,6 +2123,19 @@ export interface ApiVacancyOverviewVacancyOverview extends Schema.SingleType {
         };
       }>;
     meta: Attribute.Component<'seo.meta'> &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    content: Attribute.RichText &
+      Attribute.CustomField<
+        'plugin::ckeditor.CKEditor',
+        {
+          output: 'HTML';
+          preset: 'light';
+        }
+      > &
       Attribute.SetPluginOptions<{
         i18n: {
           localized: true;

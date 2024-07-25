@@ -46,15 +46,6 @@
       "required": true,
       "unique": false
     },
-    "content": {
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      },
-      "type": "richtext",
-      "required": true
-    },
     "chapters": {
       "pluginOptions": {
         "i18n": {
@@ -103,6 +94,19 @@
         }
       },
       "component": "seo.meta"
+    },
+    "content": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "customField",
+      "options": {
+        "output": "HTML",
+        "preset": "light"
+      },
+      "customField": "plugin::ckeditor.CKEditor"
     }
   }
 }

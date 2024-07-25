@@ -35,10 +35,18 @@ export interface ContentAddressInfo extends Schema.Component {
   info: {
     displayName: 'Address info';
     icon: 'bed';
+    description: '';
   };
   attributes: {
     title: Attribute.String & Attribute.Required;
-    content: Attribute.RichText & Attribute.Required;
+    content: Attribute.RichText &
+      Attribute.CustomField<
+        'plugin::ckeditor.CKEditor',
+        {
+          output: 'HTML';
+          preset: 'light';
+        }
+      >;
   };
 }
 
@@ -51,9 +59,16 @@ export interface ContentChapter extends Schema.Component {
   };
   attributes: {
     title: Attribute.String;
-    content: Attribute.RichText;
     images: Attribute.Media<'images', true>;
     numbers: Attribute.Component<'content.number', true>;
+    content: Attribute.RichText &
+      Attribute.CustomField<
+        'plugin::ckeditor.CKEditor',
+        {
+          output: 'HTML';
+          preset: 'light';
+        }
+      >;
   };
 }
 
@@ -212,7 +227,14 @@ export interface ElementText extends Schema.Component {
     description: '';
   };
   attributes: {
-    content: Attribute.RichText & Attribute.Required;
+    content: Attribute.RichText &
+      Attribute.CustomField<
+        'plugin::ckeditor.CKEditor',
+        {
+          output: 'HTML';
+          preset: 'light';
+        }
+      >;
   };
 }
 

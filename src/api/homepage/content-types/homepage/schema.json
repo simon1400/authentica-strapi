@@ -61,18 +61,6 @@
         }
       }
     },
-    "content": {
-      "pluginOptions": {
-        "versions": {
-          "versioned": true
-        },
-        "i18n": {
-          "localized": true
-        }
-      },
-      "type": "richtext",
-      "required": true
-    },
     "cta": {
       "type": "component",
       "repeatable": false,
@@ -90,17 +78,6 @@
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::reference.reference"
-    },
-    "contentReference": {
-      "pluginOptions": {
-        "versions": {
-          "versioned": true
-        },
-        "i18n": {
-          "localized": true
-        }
-      },
-      "type": "richtext"
     },
     "refCta": {
       "type": "component",
@@ -184,6 +161,32 @@
       },
       "component": "action.link",
       "required": true
+    },
+    "content": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "customField",
+      "options": {
+        "output": "HTML",
+        "preset": "light"
+      },
+      "customField": "plugin::ckeditor.CKEditor"
+    },
+    "contentReference": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "customField",
+      "options": {
+        "output": "HTML",
+        "preset": "light"
+      },
+      "customField": "plugin::ckeditor.CKEditor"
     }
   }
 }

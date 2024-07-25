@@ -2,7 +2,8 @@
   "collectionName": "components_content_address_infos",
   "info": {
     "displayName": "Address info",
-    "icon": "bed"
+    "icon": "bed",
+    "description": ""
   },
   "options": {},
   "attributes": {
@@ -11,8 +12,12 @@
       "required": true
     },
     "content": {
-      "type": "richtext",
-      "required": true
+      "type": "customField",
+      "options": {
+        "output": "HTML",
+        "preset": "light"
+      },
+      "customField": "plugin::ckeditor.CKEditor"
     }
   }
 }
