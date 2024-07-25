@@ -12,15 +12,17 @@
   },
   "devDependencies": {},
   "dependencies": {
-    "@strapi/design-system": "^1.1.0",
-    "@strapi/plugin-graphql": "^4.1.9",
-    "@strapi/strapi": "4.1.11",
-    "@strapi/plugin-users-permissions": "4.1.11",
-    "@strapi/plugin-i18n": "4.1.11",
-    "better-sqlite3": "7.4.6",
-    "strapi-plugin-local-image-sharp": "^1.0.2",
-    "strapi-plugin-sitemap": "^2.0.7",
-    "strapi-tiptap-editor": "^0.7.9"
+    "@strapi/design-system": "^1.19.0",
+    "@strapi/plugin-graphql": "^4.25.1",
+    "@strapi/plugin-i18n": "4.25.1",
+    "@strapi/plugin-users-permissions": "4.25.1",
+    "@strapi/strapi": "4.25.1",
+    "better-sqlite3": "11.1.1",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^5.2.0",
+    "strapi-plugin-sitemap": "^3.1.1",
+    "styled-components": "^5.2.1"
   },
   "resolutions": {
     "**/@graphql-tools/merge": "8.3.0"
@@ -32,7 +34,7 @@
     "uuid": "f76024b9-ac6a-47a1-b49f-2bd5e32f0e03"
   },
   "engines": {
-    "node": ">=12.x.x <=16.x.x",
+    "node": ">=14.x.x <=20.x.x",
     "npm": ">=6.0.0"
   },
   "license": "MIT"
