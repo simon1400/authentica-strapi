@@ -12,7 +12,7 @@ module.exports = {
       repo : 'git@github.com:simon1400/authentica-strapi.git',
       path : '/home/dimi/app/authentica-original/strapi',
       // 'pre-deploy-local': 'git add . && git commit -m "pm2 deploy auto commit" && git push origin main',
-      'post-deploy' : 'export PATH=$PATH:/home/raf/.nvm/v0.39.1/bin/ && npm i && npm run build && pm2 reload ecosystem.config.js --env production',
+      'post-deploy' : 'npm i && npm run build && pm2 reload ecosystem.config.js --env production',
     }
   }
 };
