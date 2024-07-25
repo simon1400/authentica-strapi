@@ -57,18 +57,6 @@
       "type": "string",
       "required": true
     },
-    "content": {
-      "pluginOptions": {
-        "versions": {
-          "versioned": true
-        },
-        "i18n": {
-          "localized": true
-        }
-      },
-      "type": "richtext",
-      "required": true
-    },
     "chapters": {
       "pluginOptions": {
         "versions": {
@@ -138,6 +126,14 @@
         }
       },
       "component": "seo.meta"
+    },
+    "content": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "blocks"
     }
   }
 }
