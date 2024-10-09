@@ -238,6 +238,18 @@ export interface ElementText extends Schema.Component {
   };
 }
 
+export interface ElementVideo extends Schema.Component {
+  collectionName: 'components_content_videos';
+  info: {
+    displayName: 'video';
+    icon: 'monitor';
+    description: '';
+  };
+  attributes: {
+    videoUrl: Attribute.String & Attribute.Required;
+  };
+}
+
 export interface NavigationNavItem extends Schema.Component {
   collectionName: 'components_navigation_nav_items';
   info: {
@@ -311,6 +323,7 @@ declare module '@strapi/types' {
       'element.numbers': ElementNumbers;
       'element.reference': ElementReference;
       'element.text': ElementText;
+      'element.video': ElementVideo;
       'navigation.nav-item': NavigationNavItem;
       'navigation.nav-sub-item': NavigationNavSubItem;
       'navigation.social-nav': NavigationSocialNav;

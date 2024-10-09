@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_content_videos",
+  "info": {
+    "displayName": "video",
+    "icon": "monitor",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "videoUrl": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

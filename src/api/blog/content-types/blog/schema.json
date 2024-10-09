@@ -73,7 +73,8 @@
         "element.images",
         "element.numbers",
         "element.reference",
-        "element.text"
+        "element.text",
+        "element.video"
       ]
     },
     "footer": {

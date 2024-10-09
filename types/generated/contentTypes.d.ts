@@ -943,7 +943,8 @@ export interface ApiBlogBlog extends Schema.CollectionType {
         'element.images',
         'element.numbers',
         'element.reference',
-        'element.text'
+        'element.text',
+        'element.video'
       ]
     > &
       Attribute.SetPluginOptions<{
